@@ -40,7 +40,7 @@ main.cpp
 )
 
 add_executable(FinDir ${FinDir_src})
-target_compile_definitions(${FinDir} PRIVATE $<$<OR:$<CONFIG:Debug>,$<CONFIG:RelWithDebInfo>>:QT_QML_DEBUG>)
+target_compile_definitions(${PROJECT_NAME} PRIVATE $<$<OR:$<CONFIG:Debug>,$<CONFIG:RelWithDebInfo>>:QT_QML_DEBUG>)
 target_link_libraries(FinDir Qt5::Widgets)
 target_link_libraries(FinDir Qt5::Core)
 target_link_libraries(FinDir Qt5::Sql)
