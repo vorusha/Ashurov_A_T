@@ -27,10 +27,18 @@ auth.ui
 converter.h
 converter.cpp
 converter.ui
+#edit Window
+edit.h
+edit.cpp
+edit.ui
 # mainwindow Window
 mainwindow.h
 mainwindow.cpp
 mainwindow.ui
+# ships Window
+ships.h
+ships.cpp
+ships.ui
 # stonks Window
 stonks.h
 stonks.cpp
