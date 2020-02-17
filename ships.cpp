@@ -22,8 +22,8 @@ ships::~ships()
 void ships::showEvent(QShowEvent *event)
 {
     model = new QSqlQueryModel();
-    model->setQuery("SELECT ID, Name, Sebestoimost, dok AS Dok FROM Sudno");
-    //SELECT u.ID, u.Name, d.Name AS Tip, u.Sebestoimost, u.dok AS Dok FROM Sudno u INNER JOIN TipSudna d ON u.TipS = d.ID
+    model->setQuery("SELECT ID, Name, Sebestoimost AS Price, dok AS Dock FROM Sudno");
+    //SELECT u.ID, u.Name, d.Name AS Tip, u.Sebestoimost, u.dok AS Dock FROM Sudno u INNER JOIN TipSudna d ON u.TipS = d.ID
     ui->tableView->setModel(model);
     ui->tableView->resizeColumnsToContents();
     ui->tableView->setSortingEnabled(true);

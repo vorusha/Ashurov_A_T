@@ -10,10 +10,6 @@ auth::auth(QWidget *parent) :
     kursi = new choice();
 
     ui->lineEdit_4->setEchoMode(QLineEdit::Password);
-    ui->lineEdit->setText("LAPTOP-H56EI9IC");
-    ui->lineEdit_2->setText("Sudostroitelnaya_Verf");
-    ui->lineEdit_3->setText("NameFirst");
-    ui->lineEdit_4->setText("123");
     qmb = new QMessageBox();
 }
 
