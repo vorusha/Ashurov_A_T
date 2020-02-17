@@ -47,40 +47,6 @@ void converter::showEvent(QShowEvent *event)
     }
 }
 
-/*void converter::on_tableView_3_clicked(const QModelIndex &index)
-{
-    int temp_id;
-    temp_id=ui->tableView_3->model()->data(ui->tableView_3->model()->index(index.row(),0)).toInt();
-    IDfrom=temp_id;
-
-    QSqlQuery *query = new QSqlQuery();
-    query->prepare("SELECT Name FROM Valuti WHERE id = :id");
-    query->bindValue(":id",temp_id);
-
-    if (query->exec())
-    {
-        query->next();
-        ui->lineEdit_4->setText(query->value(0).toString());
-    }
-}
-
-void converter::on_tableView_2_clicked(const QModelIndex &index)
-{
-    int temp_id;
-    temp_id=ui->tableView_2->model()->data(ui->tableView_2->model()->index(index.row(),0)).toInt();
-    IDto=temp_id;
-
-    QSqlQuery *query = new QSqlQuery();
-    query->prepare("SELECT Name FROM Valuti WHERE id = :id");
-    query->bindValue(":id",temp_id);
-
-    if (query->exec())
-    {
-        query->next();
-        ui->lineEdit_2->setText(query->value(0).toString());
-    }
-}*/
-
 void converter::on_pushButton_clicked()
 {
     int sum = ui->lineEdit_3->text().toInt();

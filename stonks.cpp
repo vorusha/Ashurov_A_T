@@ -20,7 +20,6 @@ void stonks::on_pushButton_3_clicked()
 {
     model = new QSqlQueryModel();
     model->setQuery("SELECT u.Data, d.name AS Currency, u.Kurs FROM Kursi u INNER JOIN Valuti d ON u.IDV = d.id");
-
     ui->tableView->setModel(model);
     ui->tableView->resizeColumnsToContents();
     ui->tableView->setSortingEnabled(true);
@@ -52,4 +51,10 @@ void stonks::on_pushButton_clicked()
 void stonks::on_pushButton_2_clicked()
 {
     addn->show();
+}
+
+void stonks::on_pushButton_5_clicked()
+{
+    this->close();
+    emit choiceWindow();
 }

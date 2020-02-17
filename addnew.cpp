@@ -1,6 +1,5 @@
 #include "addnew.h"
 #include "ui_addnew.h"
-#include<QDebug>
 
 addnew::addnew(QWidget *parent) :
     QWidget(parent),
@@ -40,7 +39,6 @@ void addnew::on_pushButton_clicked()
     int idv = ui->comboBox->currentText().split(".")[0].toInt();
     double kurs = ui->doubleSpinBox->value();
     query.prepare("INSERT INTO Kursi (Data,IDV,Kurs) VALUES ("+data+","+QString::number(idv)+","+QString::number(kurs)+")");
-    qDebug() << "INSERT INTO Kursi (Data,IDV,Kurs) VALUES ("+data+","+QString::number(idv)+","+QString::number(kurs)+")";
     query.exec();
     this->close();
 }

@@ -6,8 +6,8 @@
 #include <QtSql>
 #include <QMessageBox>
 
-#include <stonks.h>
-#include <ui_stonks.h>
+#include <choice.h>
+#include <ui_choice.h>
 
 namespace Ui {
 class auth;
@@ -23,7 +23,7 @@ public:
 
     QMessageBox *qmb;
 
-    stonks *kursi;
+    choice *kursi;
 
 private slots:
     void on_pushButton_clicked();

@@ -75,15 +75,15 @@
    </palette>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Converter</string>
   </property>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>10</x>
      <y>10</y>
      <width>201</width>
-     <height>211</height>
+     <height>215</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout_3">

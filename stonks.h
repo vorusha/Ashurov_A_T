@@ -9,6 +9,7 @@
 #include <converter.h>
 #include <ui_converter.h>
 #include <addnew.h>
+#include <ui_addnew.h>
 
 namespace Ui {
 class stonks;
@@ -25,6 +26,9 @@ public:
     converter *conv;
     addnew *addn;
 
+signals:
+    void choiceWindow();
+
 private slots:
     void on_pushButton_3_clicked();
 
@@ -33,6 +37,8 @@ private slots:
     void on_pushButton_clicked();
 
     void on_pushButton_2_clicked();
+
+    void on_pushButton_5_clicked();
 
 private:
     Ui::stonks *ui;

@@ -2,7 +2,6 @@
 #define CONVERTER_H
 
 #include <QWidget>
-#include <QDebug>
 
 #include <QSqlQuery>
 #include <QSqlQueryModel>
@@ -29,10 +28,6 @@ private slots:
     void on_pushButton_clicked();
 
     void on_pushButton_2_clicked();
-
-//    void on_tableView_3_clicked(const QModelIndex &index);
-
-//    void on_tableView_2_clicked(const QModelIndex &index);
 
 private:
     Ui::converter *ui;

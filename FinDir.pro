@@ -18,23 +18,32 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     addnew.cpp \
     auth.cpp \
+    choice.cpp \
     converter.cpp \
+    edit.cpp \
     main.cpp \
     mainwindow.cpp \
+    ships.cpp \
     stonks.cpp
 
 HEADERS += \
     addnew.h \
     auth.h \
+    choice.h \
     converter.h \
+    edit.h \
     mainwindow.h \
+    ships.h \
     stonks.h
 
 FORMS += \
     addnew.ui \
     auth.ui \
+    choice.ui \
     converter.ui \
+    edit.ui \
     mainwindow.ui \
+    ships.ui \
     stonks.ui
 
 # Default rules for deployment.

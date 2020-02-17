@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>addnew</class>
- <widget class="QWidget" name="addnew">
+ <class>choice</class>
+ <widget class="QWidget" name="choice">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>171</width>
-    <height>211</height>
+    <width>261</width>
+    <height>165</height>
    </rect>
   </property>
   <property name="palette">
@@ -75,59 +75,20 @@
    </palette>
   </property>
   <property name="windowTitle">
-   <string>New data</string>
+   <string>Choice</string>
   </property>
-  <widget class="QPushButton" name="pushButton">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>170</y>
-     <width>151</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>MS Reference Sans Serif</family>
-     <pointsize>10</pointsize>
-    </font>
-   </property>
-   <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color:  rgb(104, 253, 141);
-background-color: rgb(0, 85, 0);</string>
-   </property>
-   <property name="text">
-    <string>Confirm</string>
-   </property>
-  </widget>
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>10</y>
-     <width>151</width>
-     <height>151</height>
+     <x>60</x>
+     <y>50</y>
+     <width>141</width>
+     <height>61</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout">
     <item row="0" column="0">
-     <widget class="QLabel" name="label">
-      <property name="font">
-       <font>
-        <family>MS Reference Sans Serif</family>
-        <pointsize>10</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>Currency</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="0">
-     <widget class="QComboBox" name="comboBox">
+     <widget class="QPushButton" name="pushButton">
       <property name="font">
        <font>
         <family>MS Reference Sans Serif</family>
@@ -141,65 +102,28 @@ background-color: rgb(0, 85, 0);</string>
        <string notr="true">color:  rgb(104, 253, 141);
 background-color: rgb(0, 85, 0);</string>
       </property>
-     </widget>
-    </item>
-    <item row="2" column="0">
-     <widget class="QLabel" name="label_2">
-      <property name="font">
-       <font>
-        <family>MS Reference Sans Serif</family>
-        <pointsize>10</pointsize>
-       </font>
-      </property>
       <property name="text">
-       <string>Data</string>
+       <string>Currencies</string>
       </property>
      </widget>
     </item>
-    <item row="3" column="0">
-     <widget class="QDateEdit" name="dateEdit">
+    <item row="1" column="0">
+     <widget class="QPushButton" name="pushButton_2">
       <property name="font">
        <font>
         <family>MS Reference Sans Serif</family>
         <pointsize>10</pointsize>
        </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
       </property>
       <property name="styleSheet">
-       <string notr="true">selection-background-color: rgb(154, 255, 154);
-selection-color: rgb(0, 85, 0);</string>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="0">
-     <widget class="QLabel" name="label_3">
-      <property name="font">
-       <font>
-        <family>MS Reference Sans Serif</family>
-        <pointsize>10</pointsize>
-       </font>
+       <string notr="true">color:  rgb(104, 253, 141);
+background-color: rgb(0, 85, 0);</string>
       </property>
       <property name="text">
-       <string>Dollar/Currency</string>
-      </property>
-     </widget>
-    </item>
-    <item row="5" column="0">
-     <widget class="QDoubleSpinBox" name="doubleSpinBox">
-      <property name="font">
-       <font>
-        <family>MS Reference Sans Serif</family>
-        <pointsize>10</pointsize>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">selection-background-color: rgb(154, 255, 154);
-selection-color: rgb(0, 85, 0);</string>
-      </property>
-      <property name="decimals">
-       <number>4</number>
-      </property>
-      <property name="maximum">
-       <double>99999.990000000005239</double>
+       <string>Ships</string>
       </property>
      </widget>
     </item>
